@@ -150,6 +150,14 @@ s! {
         pub pw_shell: *mut ::c_char,
     }
 
+    pub struct flock {
+        pub l_type: ::c_short,
+        pub l_whence: ::c_short,
+        pub l_start: ::off_t,
+        pub l_len: ::off_t,
+        pub l_pid: ::pid_t,
+    }
+
     pub struct sigaction {
         pub sa_handler: ::sighandler_t,
         pub sa_flags: ::c_ulong,
